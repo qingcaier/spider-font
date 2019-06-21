@@ -1,0 +1,909 @@
+
+{
+    "_id" : ObjectId("5d088d64b078510625fe1b61"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "2752920",
+    "anchor_roomname" : "   ��  ��  ��  ��ǿ���� ΢��˽��     ",
+    "anchor_url" : "http://www.huya.com/kaerlol",
+    "anchor_name" : "����",
+    "anchor_tag" : "��������",
+    "position" : "1-2",
+    "fan_num" : [ 
+        "9746305"
+    ],
+    "crawl_time" : "2019-06-18 15:06:12"
+}
+
+
+{
+    "_id" : ObjectId("5d088d64b078510625fe1b63"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "2171260",
+    "anchor_roomname" : "���� ��  ը ��  ȫ��AD  Carry ��        ��",
+    "anchor_url" : "http://www.huya.com/baozha",
+    "anchor_name" : "��ը",
+    "anchor_tag" : "��������",
+    "position" : "1-3",
+    "fan_num" : [ 
+        "4984190"
+    ],
+    "crawl_time" : "2019-06-18 15:06:12"
+}
+
+
+{
+    "_id" : ObjectId("5d088d4cb078510625fe18cc"),
+    "channel" : [ 
+        "������ҫ"
+    ],
+    "anchor_category" : "������ҫ",
+    "watch_num" : "2052587",
+    "anchor_roomname" : "111",
+    "anchor_url" : "http://www.huya.com/wjz520cx",
+    "anchor_name" : "Dae-��̬��������",
+    "anchor_tag" : "�׽��Ƽ�",
+    "position" : "1-2",
+    "fan_num" : [ 
+        "5377518"
+    ],
+    "crawl_time" : "2019-06-18 15:05:48"
+}
+
+
+{
+    "_id" : ObjectId("5d088c7eb078510625fe0e5c"),
+    "channel" : [ 
+        "��ƽ��Ӣ"
+    ],
+    "anchor_category" : "��ƽ��Ӣ",
+    "watch_num" : "1826182",
+    "anchor_roomname" : "1392927947yy��1��ֱ����",
+    "anchor_url" : "http://www.huya.com/agbaozi",
+    "anchor_name" : "AG����",
+    "anchor_tag" : "�����Ƽ�",
+    "position" : "1-1",
+    "fan_num" : [ 
+        "1221725"
+    ],
+    "crawl_time" : "2019-06-18 15:02:22"
+}
+
+
+{
+    "_id" : ObjectId("5d088c2cb078510625fe0933"),
+    "channel" : [ 
+        "��������"
+    ],
+    "anchor_category" : "��������",
+    "watch_num" : "1819881",
+    "anchor_roomname" : "������һ����",
+    "anchor_url" : "http://www.huya.com/lafeng",
+    "anchor_name" : "������",
+    "anchor_tag" : "��������",
+    "position" : "1-1",
+    "fan_num" : [ 
+        "6837728"
+    ],
+    "crawl_time" : "2019-06-18 15:01:00"
+}
+
+
+{
+    "_id" : ObjectId("5d088d4cb078510625fe18d0"),
+    "channel" : [ 
+        "������ҫ"
+    ],
+    "anchor_category" : "������ҫ",
+    "watch_num" : "1732794",
+    "anchor_roomname" : "��������ý����ע΢�Ź��ںš�������ý����������ҫ������ļQQȺ702189975",
+    "anchor_url" : "http://www.huya.com/47307",
+    "anchor_name" : "����-����",
+    "anchor_tag" : "�����Ƽ�",
+    "position" : "1-3",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:05:48"
+}
+
+
+{
+    "_id" : ObjectId("5d088c2cb078510625fe0932"),
+    "channel" : [ 
+        "��������"
+    ],
+    "anchor_category" : "��������",
+    "watch_num" : "1586066",
+    "anchor_roomname" : "d506931121��1��ֱ����",
+    "anchor_url" : "http://www.huya.com/godv",
+    "anchor_name" : "4AMGodv",
+    "anchor_tag" : "��������",
+    "position" : "1-2",
+    "fan_num" : [ 
+        "9308708"
+    ],
+    "crawl_time" : "2019-06-18 15:01:00"
+}
+
+
+{
+    "_id" : ObjectId("5d088d64b078510625fe1b5f"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "1583620",
+    "anchor_roomname" : "��   ����OB                     �� ",
+    "anchor_url" : "http://www.huya.com/wanmei",
+    "anchor_name" : "����ob",
+    "anchor_tag" : "",
+    "position" : "1-4",
+    "fan_num" : [ 
+        "694963"
+    ],
+    "crawl_time" : "2019-06-18 15:06:12"
+}
+
+
+{
+    "_id" : ObjectId("5d088d4cb078510625fe18ca"),
+    "channel" : [ 
+        "������ҫ"
+    ],
+    "anchor_category" : "������ҫ",
+    "watch_num" : "1542220",
+    "anchor_roomname" : "Chinaؼ��������1��ֱ����",
+    "anchor_url" : "http://www.huya.com/housangun",
+    "anchor_name" : "��ͼ-������",
+    "anchor_tag" : "�����Ƽ�",
+    "position" : "1-1",
+    "fan_num" : [ 
+        "3313685"
+    ],
+    "crawl_time" : "2019-06-18 15:05:48"
+}
+
+
+{
+    "_id" : ObjectId("5d088c7eb078510625fe0e5d"),
+    "channel" : [ 
+        "��ƽ��Ӣ"
+    ],
+    "anchor_category" : "��ƽ��Ӣ",
+    "watch_num" : "1527398",
+    "anchor_roomname" : "���̼���������������ؼ  ��DKGս�Ӵ��ԡ�  ��          ��",
+    "anchor_url" : "http://www.huya.com/dongji",
+    "anchor_name" : "DK-����ؼ",
+    "anchor_tag" : "�׽��Ƽ�",
+    "position" : "1-3",
+    "fan_num" : [ 
+        "1804782"
+    ],
+    "crawl_time" : "2019-06-18 15:02:22"
+}
+
+
+{
+    "_id" : ObjectId("5d088d64b078510625fe1b64"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "1492768",
+    "anchor_roomname" : "��   LPLְҵ����                ��",
+    "anchor_url" : "http://www.huya.com/lpl",
+    "anchor_name" : "LPLְҵ����",
+    "anchor_tag" : "",
+    "position" : "1-5",
+    "fan_num" : [ 
+        "7550050"
+    ],
+    "crawl_time" : "2019-06-18 15:06:12"
+}
+
+
+{
+    "_id" : ObjectId("5d088d4cb078510625fe18d9"),
+    "channel" : [ 
+        "������ҫ"
+    ],
+    "anchor_category" : "������ҫ",
+    "watch_num" : "1469323",
+    "anchor_roomname" : "˽����أ�",
+    "anchor_url" : "http://www.huya.com/13736172",
+    "anchor_name" : "EL-�Ϻü�",
+    "anchor_tag" : "�����Ƽ�",
+    "position" : "1-4",
+    "fan_num" : [ 
+        "0"
+    ],
+    "crawl_time" : "2019-06-18 15:05:48"
+}
+
+
+{
+    "_id" : ObjectId("5d088d64b078510625fe1b5e"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "1439392",
+    "anchor_roomname" : "����-��1����������1��ֱ����",
+    "anchor_url" : "http://www.huya.com/hujiangjun",
+    "anchor_name" : "����ؼ����",
+    "anchor_tag" : "",
+    "position" : "1-7",
+    "fan_num" : [ 
+        "1562216"
+    ],
+    "crawl_time" : "2019-06-18 15:06:12"
+}
+
+
+{
+    "_id" : ObjectId("5d088c7eb078510625fe0e5b"),
+    "channel" : [ 
+        "��ƽ��Ӣ"
+    ],
+    "anchor_category" : "��ƽ��Ӣ",
+    "watch_num" : "1425378",
+    "anchor_roomname" : "����905162899��ֱ����",
+    "anchor_url" : "http://www.huya.com/yiwaa",
+    "anchor_name" : "Ҽ��",
+    "anchor_tag" : "�����Ƽ�",
+    "position" : "1-2",
+    "fan_num" : [ 
+        "1011631"
+    ],
+    "crawl_time" : "2019-06-18 15:02:22"
+}
+
+
+{
+    "_id" : ObjectId("5d088c2cb078510625fe092c"),
+    "channel" : [ 
+        "��������"
+    ],
+    "anchor_category" : "��������",
+    "watch_num" : "1409908",
+    "anchor_roomname" : "2106371735yy��1��ֱ����",
+    "anchor_url" : "http://www.huya.com/gucun",
+    "anchor_name" : "�´�",
+    "anchor_tag" : "ְҵѡ��",
+    "position" : "1-4",
+    "fan_num" : [ 
+        "3911950"
+    ],
+    "crawl_time" : "2019-06-18 15:01:00"
+}
+
+
+{
+    "_id" : ObjectId("5d088c31b078510625fe099e"),
+    "channel" : [ 
+        "����"
+    ],
+    "anchor_category" : "����",
+    "watch_num" : "1385804",
+    "anchor_roomname" : "�����δ�ý90911�����ΰ���ֱ����",
+    "anchor_url" : "http://www.huya.com/1909591514",
+    "anchor_name" : "���ΰ������ξ��顿",
+    "anchor_tag" : "�׽��Ƽ�",
+    "position" : "1-1",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:01:05"
+}
+
+
+{
+    "_id" : ObjectId("5d088d64b078510625fe1b65"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "1341034",
+    "anchor_roomname" : "   ������  ��  ���Ӵ�Ұ              ",
+    "anchor_url" : "http://www.huya.com/gushouyu",
+    "anchor_name" : "����-������",
+    "anchor_tag" : "",
+    "position" : "1-9",
+    "fan_num" : [ 
+        "2189905"
+    ],
+    "crawl_time" : "2019-06-18 15:06:12"
+}
+
+
+{
+    "_id" : ObjectId("5d088d64b078510625fe1b62"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "1309666",
+    "anchor_roomname" : "��Miss��С��? ÿ��20�����Ҳ�����ɢ��",
+    "anchor_url" : "http://www.huya.com/miss",
+    "anchor_name" : "Miss��С��",
+    "anchor_tag" : "��������",
+    "position" : "1-1",
+    "fan_num" : [ 
+        "8684211"
+    ],
+    "crawl_time" : "2019-06-18 15:06:12"
+}
+
+
+{
+    "_id" : ObjectId("5d088c31b078510625fe099b"),
+    "channel" : [ 
+        "����"
+    ],
+    "anchor_category" : "����",
+    "watch_num" : "1200406",
+    "anchor_roomname" : "�� ?<��  ��> ����ҵ羺����ӱ            ����",
+    "anchor_url" : "http://www.huya.com/690989",
+    "anchor_name" : "MHؼ����",
+    "anchor_tag" : "�׽��Ƽ�",
+    "position" : "1-7",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:01:05"
+}
+
+
+{
+    "_id" : ObjectId("5d088d64b078510625fe1b60"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "1174682",
+    "anchor_roomname" : "       ����    ��ƽ���ı��θ�����ѧ",
+    "anchor_url" : "http://www.huya.com/qingwa666",
+    "anchor_name" : "����",
+    "anchor_tag" : "",
+    "position" : "1-10",
+    "fan_num" : [ 
+        "3193371"
+    ],
+    "crawl_time" : "2019-06-18 15:06:12"
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("5d088ba2b078510625fdfce2"),
+    "channel" : [ 
+        "����"
+    ],
+    "anchor_category" : "����",
+    "watch_num" : "1154651",
+    "anchor_roomname" : "�����δ�ý90911�����λ᳤����ֱ����",
+    "anchor_url" : "http://www.huya.com/1909591507",
+    "anchor_name" : "���λ᳤",
+    "anchor_tag" : "��ǿ����",
+    "position" : "1-1",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 14:58:42"
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("5d088c2cb078510625fe092f"),
+    "channel" : [ 
+        "��������"
+    ],
+    "anchor_category" : "��������",
+    "watch_num" : "1113792",
+    "anchor_roomname" : "����400613441��ֱ����",
+    "anchor_url" : "http://www.huya.com/400613441",
+    "anchor_name" : "4AM��Զ",
+    "anchor_tag" : "ְҵѡ��",
+    "position" : "1-5",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:01:00"
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("5d088d63b078510625fe1b58"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "1083581",
+    "anchor_roomname" : "������ѧ �����һ˧�±���",
+    "anchor_url" : "http://www.huya.com/bg90010abl",
+    "anchor_name" : "����ؼ�±���",
+    "anchor_tag" : "",
+    "position" : "1-11",
+    "fan_num" : [ 
+        "1486003"
+    ],
+    "crawl_time" : "2019-06-18 15:06:11"
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("5d088d63b078510625fe1b57"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "989504",
+    "anchor_roomname" : "��   LCS.NAְҵ����             ��",
+    "anchor_url" : "http://www.huya.com/lcs",
+    "anchor_name" : "LCSְҵ����",
+    "anchor_tag" : "",
+    "position" : "1-12",
+    "fan_num" : [ 
+        "81222"
+    ],
+    "crawl_time" : "2019-06-18 15:06:11"
+}
+
+/* 25 */
+{
+    "_id" : ObjectId("5d088ba2b078510625fdfcdc"),
+    "channel" : [ 
+        "����"
+    ],
+    "anchor_category" : "����",
+    "watch_num" : "986531",
+    "anchor_roomname" : "������1��ֱ����",
+    "anchor_url" : "http://www.huya.com/1820345769",
+    "anchor_name" : "����",
+    "anchor_tag" : "��������",
+    "position" : "1-2",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 14:58:42"
+}
+
+/* 26 */
+{
+    "_id" : ObjectId("5d088c31b078510625fe0995"),
+    "channel" : [ 
+        "����"
+    ],
+    "anchor_category" : "����",
+    "watch_num" : "958401",
+    "anchor_roomname" : "�� ?  <ƤƤ����> ��������                 ����",
+    "anchor_url" : "http://www.huya.com/pp1204",
+    "anchor_name" : "JV-ƤƤ��������Vip��",
+    "anchor_tag" : "�׽��Ƽ�",
+    "position" : "1-11",
+    "fan_num" : [ 
+        "618942"
+    ],
+    "crawl_time" : "2019-06-18 15:01:05"
+}
+
+/* 27 */
+{
+    "_id" : ObjectId("5d088d4cb078510625fe18cd"),
+    "channel" : [ 
+        "������ҫ"
+    ],
+    "anchor_category" : "������ҫ",
+    "watch_num" : "911160",
+    "anchor_roomname" : "����2336610765��ֱ����",
+    "anchor_url" : "http://www.huya.com/2336610765",
+    "anchor_name" : "������ɧƤƤ",
+    "anchor_tag" : "�����Ƽ�",
+    "position" : "1-5",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:05:48"
+}
+
+/* 28 */
+{
+    "_id" : ObjectId("5d088d4cb078510625fe18ce"),
+    "channel" : [ 
+        "������ҫ"
+    ],
+    "anchor_category" : "������ҫ",
+    "watch_num" : "905549",
+    "anchor_roomname" : "����ֱ��",
+    "anchor_url" : "http://www.huya.com/465139",
+    "anchor_name" : "������",
+    "anchor_tag" : "�����Ƽ�",
+    "position" : "1-6",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:05:48"
+}
+
+/* 29 */
+{
+    "_id" : ObjectId("5d088d63b078510625fe1b54"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "856272",
+    "anchor_roomname" : "��������������1V5��ɱ��ʯ",
+    "anchor_url" : "http://www.huya.com/35184378207724",
+    "anchor_name" : "����ؼ����",
+    "anchor_tag" : "",
+    "position" : "1-14",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:06:11"
+}
+
+/* 30 */
+{
+    "_id" : ObjectId("5d088d63b078510625fe1b56"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "794843",
+    "anchor_roomname" : "����??������?����Ӣ�����ˡ�",
+    "anchor_url" : "http://www.huya.com/1257842386",
+    "anchor_name" : "������",
+    "anchor_tag" : "",
+    "position" : "1-15",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:06:11"
+}
+
+/* 31 */
+{
+    "_id" : ObjectId("5d088c2cb078510625fe092e"),
+    "channel" : [ 
+        "��������"
+    ],
+    "anchor_category" : "��������",
+    "watch_num" : "792999",
+    "anchor_roomname" : "���� ��  �� �� ���뿴�Ĳ����Ҷ���       ��",
+    "anchor_url" : "http://www.huya.com/144306235",
+    "anchor_name" : "����",
+    "anchor_tag" : "�����Ƽ�",
+    "position" : "1-7",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:01:00"
+}
+
+/* 32 */
+{
+    "_id" : ObjectId("5d088c31b078510625fe0997"),
+    "channel" : [ 
+        "����"
+    ],
+    "anchor_category" : "����",
+    "watch_num" : "744941",
+    "anchor_roomname" : "����8680896��ֱ����",
+    "anchor_url" : "http://www.huya.com/8680896",
+    "anchor_name" : "��ɫ-�����ӡ�299��",
+    "anchor_tag" : "",
+    "position" : "1-13",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:01:05"
+}
+
+/* 33 */
+{
+    "_id" : ObjectId("5d088c7eb078510625fe0e5a"),
+    "channel" : [ 
+        "��ƽ��Ӣ"
+    ],
+    "anchor_category" : "��ƽ��Ӣ",
+    "watch_num" : "693145",
+    "anchor_roomname" : "��˫���ֱ����",
+    "anchor_url" : "http://www.huya.com/wushuang1",
+    "anchor_name" : "�õ�-��˫���",
+    "anchor_tag" : "�����Ƽ�",
+    "position" : "1-5",
+    "fan_num" : [ 
+        "1284688"
+    ],
+    "crawl_time" : "2019-06-18 15:02:22"
+}
+
+/* 34 */
+{
+    "_id" : ObjectId("5d088d4bb078510625fe18c5"),
+    "channel" : [ 
+        "������ҫ"
+    ],
+    "anchor_category" : "������ҫ",
+    "watch_num" : "665769",
+    "anchor_roomname" : "��          ��ҹGodLike             ��",
+    "anchor_url" : "http://www.huya.com/hy777",
+    "anchor_name" : "��ҹGodLike",
+    "anchor_tag" : "ְҵѡ��",
+    "position" : "1-7",
+    "fan_num" : [ 
+        "1888513"
+    ],
+    "crawl_time" : "2019-06-18 15:05:47"
+}
+
+/* 35 */
+{
+    "_id" : ObjectId("5d088c2cb078510625fe0928"),
+    "channel" : [ 
+        "��������"
+    ],
+    "anchor_category" : "��������",
+    "watch_num" : "627477",
+    "anchor_roomname" : "С��Ŀ",
+    "anchor_url" : "http://www.huya.com/captain",
+    "anchor_name" : "4AMCpt",
+    "anchor_tag" : "ְҵѡ��",
+    "position" : "1-9",
+    "fan_num" : [ 
+        "720437"
+    ],
+    "crawl_time" : "2019-06-18 15:01:00"
+}
+
+/* 36 */
+{
+    "_id" : ObjectId("5d088c2db078510625fe0939"),
+    "channel" : [ 
+        "��������"
+    ],
+    "anchor_category" : "��������",
+    "watch_num" : "618788",
+    "anchor_roomname" : "��ɱ��",
+    "anchor_url" : "http://www.huya.com/liushaji",
+    "anchor_name" : "Ѫɫ-��ɱ��",
+    "anchor_tag" : "�׽��Ƽ�",
+    "position" : "1-8",
+    "fan_num" : [ 
+        "810522"
+    ],
+    "crawl_time" : "2019-06-18 15:01:01"
+}
+
+/* 37 */
+{
+    "_id" : ObjectId("5d088c31b078510625fe0998"),
+    "channel" : [ 
+        "����"
+    ],
+    "anchor_category" : "����",
+    "watch_num" : "610604",
+    "anchor_roomname" : "��?  D  ��  ? ��н���������������� ��",
+    "anchor_url" : "http://www.huya.com/xiaodd",
+    "anchor_name" : "����ؼ�͵���745��",
+    "anchor_tag" : "",
+    "position" : "1-14",
+    "fan_num" : [ 
+        "729661"
+    ],
+    "crawl_time" : "2019-06-18 15:01:05"
+}
+
+/* 38 */
+{
+    "_id" : ObjectId("5d088d64b078510625fe1b5d"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "567237",
+    "anchor_roomname" : "���� ��  ˮ ��  ����������Ѫ��          ��",
+    "anchor_url" : "http://www.huya.com/556344",
+    "anchor_name" : "��ˮ",
+    "anchor_tag" : "",
+    "position" : "1-16",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:06:12"
+}
+
+/* 39 */
+{
+    "_id" : ObjectId("5d088d63b078510625fe1b4f"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "565812",
+    "anchor_roomname" : "����1595232332��ֱ����",
+    "anchor_url" : "http://www.huya.com/chushouguai",
+    "anchor_name" : "����",
+    "anchor_tag" : "",
+    "position" : "1-17",
+    "fan_num" : [ 
+        "226307"
+    ],
+    "crawl_time" : "2019-06-18 15:06:11"
+}
+
+/* 40 */
+{
+    "_id" : ObjectId("5d088d4bb078510625fe18c7"),
+    "channel" : [ 
+        "������ҫ"
+    ],
+    "anchor_category" : "������ҫ",
+    "watch_num" : "560477",
+    "anchor_roomname" : "    ��   ��ѩ�� ?  ������һ����      ��",
+    "anchor_url" : "http://www.huya.com/32294061",
+    "anchor_name" : "����-��ѩ��",
+    "anchor_tag" : "",
+    "position" : "1-10",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:05:47"
+}
+
+/* 41 */
+{
+    "_id" : ObjectId("5d088d4bb078510625fe18c3"),
+    "channel" : [ 
+        "������ҫ"
+    ],
+    "anchor_category" : "������ҫ",
+    "watch_num" : "541497",
+    "anchor_roomname" : "��?RNGһЦ       ֱ����????????��  ",
+    "anchor_url" : "http://www.huya.com/1824390819",
+    "anchor_name" : "RNGһЦ",
+    "anchor_tag" : "",
+    "position" : "1-11",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:05:47"
+}
+
+/* 42 */
+{
+    "_id" : ObjectId("5d088ba1b078510625fdfcdb"),
+    "channel" : [ 
+        "����"
+    ],
+    "anchor_category" : "����",
+    "watch_num" : "526618",
+    "anchor_roomname" : "����ֱ��",
+    "anchor_url" : "http://www.huya.com/1939469354",
+    "anchor_name" : "��Խ-�������",
+    "anchor_tag" : "",
+    "position" : "1-3",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 14:58:41"
+}
+
+/* 43 */
+{
+    "_id" : ObjectId("5d088c2cb078510625fe092a"),
+    "channel" : [ 
+        "��������"
+    ],
+    "anchor_category" : "��������",
+    "watch_num" : "501151",
+    "anchor_roomname" : "��   PDL�й���չ����            �� ",
+    "anchor_url" : "http://www.huya.com/pdl2019",
+    "anchor_name" : "PDL�ļ���",
+    "anchor_tag" : "",
+    "position" : "1-11",
+    "fan_num" : [ 
+        "186079"
+    ],
+    "crawl_time" : "2019-06-18 15:01:00"
+}
+
+/* 44 */
+{
+    "_id" : ObjectId("5d088d4cb078510625fe18cb"),
+    "channel" : [ 
+        "������ҫ"
+    ],
+    "anchor_category" : "������ҫ",
+    "watch_num" : "495135",
+    "anchor_roomname" : "�� �� ��  �� ���� ǧԪ�����ϰ�һ����    ��",
+    "anchor_url" : "http://www.huya.com/huyaoxiaoyu",
+    "anchor_name" : "�ڷ�-����",
+    "anchor_tag" : "�����Ƽ�",
+    "position" : "1-12",
+    "fan_num" : [ 
+        "665407"
+    ],
+    "crawl_time" : "2019-06-18 15:05:48"
+}
+
+/* 45 */
+{
+    "_id" : ObjectId("5d088d63b078510625fe1b50"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "435971",
+    "anchor_roomname" : "����",
+    "anchor_url" : "http://www.huya.com/176721635",
+    "anchor_name" : "���쿨��",
+    "anchor_tag" : "",
+    "position" : "1-18",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:06:11"
+}
+
+/* 46 */
+{
+    "_id" : ObjectId("5d088d4bb078510625fe18c8"),
+    "channel" : [ 
+        "������ҫ"
+    ],
+    "anchor_category" : "������ҫ",
+    "watch_num" : "423152",
+    "anchor_roomname" : "1947314326yy��ֱ����",
+    "anchor_url" : "http://www.huya.com/1947314326",
+    "anchor_name" : "��Ľ",
+    "anchor_tag" : "��������",
+    "position" : "1-14",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:05:47"
+}
+
+/* 47 */
+{
+    "_id" : ObjectId("5d088c31b078510625fe0990"),
+    "channel" : [ 
+        "����"
+    ],
+    "anchor_category" : "����",
+    "watch_num" : "416317",
+    "anchor_roomname" : "�齫�ݻ�����",
+    "anchor_url" : "http://www.huya.com/maxiaoshuai",
+    "anchor_name" : "Ӱ��-��С˧��������",
+    "anchor_tag" : "��������",
+    "position" : "1-16",
+    "fan_num" : [ 
+        "536969"
+    ],
+    "crawl_time" : "2019-06-18 15:01:05"
+}
+
+/* 48 */
+{
+    "_id" : ObjectId("5d088d4bb078510625fe18c2"),
+    "channel" : [ 
+        "������ҫ"
+    ],
+    "anchor_category" : "������ҫ",
+    "watch_num" : "413191",
+    "anchor_roomname" : "�� �� ΢ �� ��    �� ������ҫ",
+    "anchor_url" : "http://www.huya.com/2283451934",
+    "anchor_name" : "���΢��",
+    "anchor_tag" : "",
+    "position" : "1-15",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:05:47"
+}
+
+/* 49 */
+{
+    "_id" : ObjectId("5d088d63b078510625fe1b52"),
+    "channel" : [ 
+        "Ӣ������"
+    ],
+    "anchor_category" : "Ӣ������",
+    "watch_num" : "392713",
+    "anchor_roomname" : "���� ��   B ��  ��һ��������   ��  ��   ��",
+    "anchor_url" : "http://www.huya.com/czj520wyy",
+    "anchor_name" : "�ͱ�ؼR1ven",
+    "anchor_tag" : "",
+    "position" : "1-19",
+    "fan_num" : [ 
+        "297883"
+    ],
+    "crawl_time" : "2019-06-18 15:06:11"
+}
+
+/* 50 */
+{
+    "_id" : ObjectId("5d088c31b078510625fe0994"),
+    "channel" : [ 
+        "����"
+    ],
+    "anchor_category" : "����",
+    "watch_num" : "382881",
+    "anchor_roomname" : "123",
+    "anchor_url" : "http://www.huya.com/1760210470",
+    "anchor_name" : "�����¼�������ү��������",
+    "anchor_tag" : "��������",
+    "position" : "1-15",
+    "fan_num" : [],
+    "crawl_time" : "2019-06-18 15:01:05"
+}
