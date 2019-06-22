@@ -1,0 +1,79 @@
+// svg图标样式
+.svg-icon {
+    width: 25px;
+    height: 25px;
+    vertical-align: -0.15em;
+    fill: darken;
+    overflow: hidden;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+}
+
+// 图表主板
+.chartBoard {
+    width: 80%;
+    display: flex;
+    background: rgba(256 256 256 0.6) center;
+    margin-bottom: 3%;
+}
+
+// 切换图表区域
+.control {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: flex-end;
+    width: 20%;
+    // border: 1px solid red;
+    // background: rgba(256 0 256 0.6) center;
+}
+
+// 切换图表按钮公共样式
+.publicStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    border: 1px solid #555;
+    margin-top: 30%;
+    border-radius: 5px;
+    color: rgba(256 256 256 0.6);
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+// 未选中按钮
+.changeButton {
+    background-color: #6e6e6e;
+}
+
+// 鼠标覆盖时按钮
+.changeButton:hover, .selectButton:hover {
+    // background-color: rgba(260 260 260 0.9);
+    width: 153px;
+    background-color: rgba(108 108 108 0.5);
+}
+
+// 选中的按钮
+.selectButton {
+    background-color: rgba(108 108 108 0.4);
+}
+
+// 图表区
+.chartArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+// 底部数据时间
+.showTime {
+    font-size: 1.5vw;
+    font-weight: bold;
+}

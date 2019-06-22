@@ -1,3 +1,4 @@
+<!--主题背景组件-->
 <template>
   <div class="bodyShow">
     <router-view/>
@@ -9,6 +10,7 @@ export default {}
 </script>
 
 <style lang="stylus">
+// 导航栏下面的主体背景
 .bodyShow {
   width: 100%;
   height: 600px;
@@ -17,7 +19,7 @@ export default {}
   // background-size: 100% 100%;
   // display: flex;
   // justify-content: center;
-  padding-top: 3%;
+  padding-top: 4%;
   overflow: auto;
 }
 </style>

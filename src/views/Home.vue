@@ -1,16 +1,18 @@
+<!--首页-->
+
 <template>
   <div class="home">
     <div class="chartBoard">
       <div class="control">
         <div
-          :class="this.chartId===0?'selectButton':'changeButton'"
+          :class="currentChart===0?'selectButton':'changeButton'"
           class="publicStyle"
           @click="changeChart1"
         >
           <svg-icon icon-class="guankanren"></svg-icon>在线观看人数图
         </div>
         <div
-          :class="this.chartId===1?'selectButton':'changeButton'"
+          :class="currentChart===1?'selectButton':'changeButton'"
           class="publicStyle"
           @click="changeChart2"
         >
@@ -38,18 +40,19 @@ export default {
   name: 'Help',
   data() {
     return {
-      pageIndex: 0,
-      chartId: 0,
+      pageIndex: 0, // 首页页面
 
-      totalData: {}
+      currentChart: '', //当前图表
+      totalData: {} // 图表数据
     }
   },
   methods: {
     drawLine() {
       // document.getElementById('myChart').innerHTML = ''
-      let buttomId = this.chartId
+      let buttomId = this.currentChart
 
       if (buttomId === 0) {
+        // 渲染第一个图表
         // 基于准备好的DOM，初始化echarts实例
         let myChart = echarts.init(document.getElementById('myChart'), 'light')
         // 绘制图表
@@ -78,6 +81,7 @@ export default {
         })
         // this.$forceUpdate()
       } else if (buttomId === 1) {
+        // 渲染第二个图表
         let myChart = echarts.init(document.getElementById('myChart'), 'light')
         // 绘制图表
         myChart.setOption({
@@ -108,6 +112,8 @@ export default {
         // this.$forceUpdate()
       }
     },
+
+    // 获取图表需要的数据
     getTotalData() {
       this.$axios
         .get('/', {
@@ -124,94 +130,29 @@ export default {
           console.log(err)
         })
     },
+
+    // 第一个图表按钮，绘制第一个图表
     changeChart1: function() {
-      this.chartId = 0
+      this.currentChart = 0
       this.getTotalData()
       this.drawLine()
     },
+
+    // 第二个图表按钮，绘制第二个图表
     changeChart2: function() {
-      this.chartId = 1
+      this.currentChart = 1
       this.getTotalData()
       this.drawLine()
     }
   },
 
   mounted() {
+    this.currentChart = 0
+    // 初始化渲染图表
     this.getTotalData()
     this.drawLine()
   }
 }
 </script>
 
-<style lang="stylus" scoped>
-.svg-icon {
-  width: 25px;
-  height: 25px;
-  vertical-align: -0.15em;
-  fill: darken;
-  overflow: hidden;
-}
-
-.home {
-  display: flex;
-  justify-content: center;
-}
-
-.chartBoard {
-  width: 80%;
-  display: flex;
-  background: rgba(256 256 256 0.6) center;
-  margin-bottom: 3%;
-}
-
-.control {
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
-  align-items: flex-end;
-  width: 20%;
-  // border: 1px solid red;
-  // background: rgba(256 0 256 0.6) center;
-}
-
-.publicStyle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 60px;
-  border: 1px solid #555;
-  margin-top: 30%;
-  border-radius: 5px;
-  color: rgba(256 256 256 0.6);
-  font-size: 1vw;
-  cursor: pointer;
-}
-
-.changeButton {
-  background-color: #6e6e6e;
-}
-
-.changeButton:hover, .selectButton:hover {
-  // background-color: rgba(260 260 260 0.9);
-  width: 153px;
-  background-color: rgba(108 108 108 0.5);
-}
-
-.selectButton {
-  background-color: rgba(108 108 108 0.4);
-}
-
-.chartArea {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-}
-
-.showTime {
-  font-size: 1.5vw;
-  font-weight: bold;
-}
-</style>
+<style lang="stylus" scoped src="../css/shouye.styl"></style>

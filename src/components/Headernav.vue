@@ -1,3 +1,5 @@
+<!-- 头部导航栏组件，负责路由的跳转 -->
+
 <template>
   <div class="layout header">
     <div class="layout navigateBar">
@@ -31,37 +33,37 @@ import { websites, navigatePages } from '../js/config'
 export default {
   data() {
     return {
-      navigatePages: navigatePages,
-      websites: websites,
-      searchReault: '',
+      navigatePages: navigatePages, // 第一导航栏
+      websites: websites, // 第二导航栏
 
-      pageIndex: '',
-      value: '',
-      showSearch: '',
+      pageIndex: '', // 当前路由对应的页面
+
+      // searchReault:{}
+      // showSearch: '',
+
       logo: require('@/assets/logo.png')
     }
   },
   methods: {
+    // 第一导航栏跳转
     navigate(item) {
       this.$router.push('/' + item.navigateTo)
       this.pageIndex = item.id
 
       // console.log(this.pageIndex)
       // console.log('----------')
-
       // this.$emit('getPageIndex', item.id)
     },
+
+    // 第二导航栏跳转
     router(item) {
       this.$router.push('/home/' + item.route)
       this.pageIndex = item.id
 
       // this.$emit('getPageIndex', item.id)
     },
-    // submit: function() {
-    //   switch (this.website.id) {
-    //     case 0:
-    //   }
-    // }
+
+    // 根据路由变化更新对应页面
     updateRouter: function() {
       let pagePath = this.$route.path
       switch (pagePath) {
@@ -104,33 +106,35 @@ export default {
     // }
   },
   watch: {
+    // 监听路由变化并更新对应所在页面(浏览器前进或后退)
     $route: function(to, from) {
       console.log('kkkkkkkkkkkkkkkkkkkkkkk')
       console.log(to.path)
+
       this.updateRouter()
-      console.log(this.pageIndex)
+
+      // console.log(this.pageIndex)
       // this.isShowSearch()
     }
   },
+
   beforeMount() {
-    console.log('lllllllllllllllllll')
-    console.log(this.$route.path)
+    // 刷新页面时根据路由刷新
+
+    // console.log('bbbbbbbbbbbbbb')
+    // console.log(this.$route.path)
+    // console.log(this)
+
     this.updateRouter()
-    console.log(this.pageIndex)
+
+    // console.log('-----------------')
+    // console.log(this.pageIndex)
     // this.isShowSearch()
   }
 }
 </script>
 
-<style lang='stylus' src="../css/header.styl">
-.svg-icon {
-  width: 100px;
-  height: 50px;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
-}
-</style>
+<style lang='stylus' src="../css/header.styl" scoped></style>
 
 
 

@@ -1,3 +1,4 @@
+// 页面的名称及路由信息
 var navigatePages = [
   {
     id: 0,
@@ -44,6 +45,7 @@ var websites = [
   }
 ]
 
+// 选择排序方式的单选框
 var sortWay = [
   {
     value: '0',
@@ -55,6 +57,7 @@ var sortWay = [
   }
 ]
 
+// 展示表格的表头信息
 var columns = [
   {
     title: '排名',
@@ -113,6 +116,7 @@ var columns = [
   }
 ]
 
+// 各页面可选择的直播类型
 var liveClasses = {
   douyu: [
     {
@@ -246,6 +250,7 @@ var liveClasses = {
   ]
 }
 
+// 各平台页面的介绍信息
 var introduction = {
   douyu:
     '斗鱼TV是一家弹幕式直播分享网站，为用户提供视频直播和赛事直播服务。 [1-2] 斗鱼TV的前身为ACFUN生放送直播，于2014年1月1日起正式更名为斗鱼TV。斗鱼TV以游戏直播为主，涵盖了娱乐、综艺、体育、户外等多种直播内容。',
