@@ -20,9 +20,9 @@
         </div>
       </div>
 
-      <div class="chartArea">
-        <div id="myChart" :style="{width: '800px', height: '500px'}"></div>
-        <div class="showTime">数据获取时间：{{this.totalData.time}}&emsp;单位(千万)</div>
+      <div class="chartArea" v-ratio="{ratio:1/1,fixed:'width',keep:true, debounce: 0}">
+        <div id="myChart" :style="{width:'900px', height:'600px'}"></div>
+        <div class="showTime">数据获取时间：{{showTime}}&emsp;单位(千万)</div>
       </div>
     </div>
   </div>
@@ -42,54 +42,36 @@ export default {
     return {
       pageIndex: 0, // 首页页面
 
-      currentChart: '', //当前图表
-      totalData: {} // 图表数据
+      currentChart: 0, //当前图表
+      // totalData: [], // 图表数据
+      showTime: ''
     }
   },
   methods: {
-    drawLine() {
+    drawLine(data) {
       // document.getElementById('myChart').innerHTML = ''
       let buttomId = this.currentChart
+      // let showData = data
+      // 渲染第一个图表
+      // 基于准备好的DOM，初始化echarts实例
+      let myChart = echarts.init(document.getElementById('myChart'), 'light')
 
+      let dataTitle, dataName
       if (buttomId === 0) {
-        // 渲染第一个图表
-        // 基于准备好的DOM，初始化echarts实例
-        let myChart = echarts.init(document.getElementById('myChart'), 'light')
-        // 绘制图表
-        myChart.setOption({
-          title: { text: '在线观看人数统计' },
-          tooltip: {},
-          xAxis: {
-            data: ['斗鱼', '虎牙', '企鹅电竞', '触手TV', 'YY直播'],
-            axisLabel: {
-              fontSize: 24
-            }
-          },
-          yAxis: {
-            axisLabel: {
-              fontSize: 18
-            }
-          },
-          series: [
-            {
-              name: '观看人数',
-              type: 'bar',
-              data: [5, 20, 36, 1000, 10]
-              // data: this.totalData.numberData
-            }
-          ]
-        })
-        // this.$forceUpdate()
+        dataTitle = '在线观看人数统计'
+        dataName = '观看人数'
       } else if (buttomId === 1) {
-        // 渲染第二个图表
-        let myChart = echarts.init(document.getElementById('myChart'), 'light')
-        // 绘制图表
-        myChart.setOption({
-          title: { text: '订阅量统计' },
+        dataTitle = '订阅量统计'
+        dataName = '订阅人数'
+      }
+      // 绘制图表
+      myChart.setOption(
+        {
+          title: {
+            text: dataTitle
+          },
           tooltip: {},
           xAxis: {
-            // name: '直播平台',
-            // nameTextStyle: { fontSize: 8 },
             data: ['斗鱼', '虎牙', '企鹅电竞', '触手TV', 'YY直播'],
             axisLabel: {
               fontSize: 24
@@ -102,29 +84,38 @@ export default {
           },
           series: [
             {
-              name: '订阅量',
+              name: dataName,
               type: 'bar',
-              data: [30, 20, 5, 4, 40]
-              // data: this.totalData.numberData
+              // data: showData
+              data: data
             }
           ]
-        })
-        // this.$forceUpdate()
-      }
+        },
+        true
+      )
+      // myChart.resize()
     },
 
     // 获取图表需要的数据
     getTotalData() {
       this.$axios
-        .get('/', {
+        .get('/api/showTable', {
           params: {
             pageId: this.pageIndex,
-            tableId: this.chartId
+            tableId: this.currentChart
           }
         })
         .then(response => {
-          this.totalData = response.data.totalData
-          this.showTime = response.data.showTime
+          // this.totalData = response.data.numberData
+          console.log('1111111111')
+          console.log(response)
+          this.showTime = response.data.time
+
+          this.drawLine(response.data.numberData)
+          // this.$nextTick(() => {
+          //   this.$store.state.retData = response.data
+          //   console.log(this.$store.state.retData)
+          // })
         })
         .catch(function(err) {
           console.log(err)
@@ -146,11 +137,28 @@ export default {
     }
   },
 
+  // computed: {
+  //   equipData: function() {
+  //     return this.$store.retData || ''
+  //   }
+  // },
+  // beforeMount() {
+  //   this.getTotalData()
+  // },
   mounted() {
-    this.currentChart = 0
+    // this.currentChart = 0
     // 初始化渲染图表
+
     this.getTotalData()
-    this.drawLine()
+    // this.$nextTick(() => {
+    // 加上延时避免 mounted 方法比页面加载早执行 或者 对img进行块级化设置宽高进行 提前站位
+    // setTimeout(() => {
+    // this.getTotalData()
+    // console.log('-------' + this.showTime)
+    // this.drawLine()
+    // })
+    // })
+    // this.drawLine()
   }
 }
 </script>

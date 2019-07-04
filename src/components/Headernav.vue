@@ -3,16 +3,30 @@
 <template>
   <div class="layout header">
     <div class="layout navigateBar">
-      <img class="logo" :src="logo">
-      <div
-        style="cursor:pointer;"
-        :class="(pageIndex === item.id ? 'selectedPage':'page') + ' ' + item.navigateTo"
-        v-for="(item,idx) in navigatePages"
-        :key="idx"
-        @click="navigate(item)"
-      >{{item.title}}</div>
+      <img class="logo" :src="logo" />
+      <div class="layout subNav">
+        <div
+          style="cursor:pointer;"
+          :class="(pageIndex === item.id ? 'selectedPage':'page') + ' ' + item.navigateTo"
+          v-for="(item,idx) in navigatePages"
+          :key="idx"
+          @click="navigate(item)"
+        >{{item.title}}</div>
+      </div>
+      <div class="layout search">
+        <Input
+          v-show="showSearch"
+          type="text"
+          search
+          placeholder="请输入关键词"
+          v-model="value"
+          size="large"
+          style="width:100%"
+          @on-search="sendKeyword"
+        />
+      </div>
     </div>
-    <div class="layout navigateList">
+    <div class="layout navigateList" v-show="isShow">
       <div
         style="cursor:pointer;"
         :class="(pageIndex === item.id ? 'selectedItem':'item') + ' ' + item.route"
@@ -28,6 +42,7 @@
 </template>
 
 <script>
+import bus from '../js/bus'
 import { websites, navigatePages } from '../js/config'
 // import { constants } from 'crypto'
 export default {
@@ -38,8 +53,9 @@ export default {
 
       pageIndex: '', // 当前路由对应的页面
 
-      // searchReault:{}
-      // showSearch: '',
+      value: '', // 搜索字段
+      showSearch: '', // 是否显示搜索栏
+      isShow: '', // 是否显示直播平台导航栏
 
       logo: require('@/assets/logo.png')
     }
@@ -69,29 +85,48 @@ export default {
       switch (pagePath) {
         case '/home':
           this.pageIndex = 0
+          this.showSearch = false
+          this.isShow = true
           break
         case '/aboutus':
           this.pageIndex = 1
+          this.showSearch = false
+          this.isShow = false
           break
         case '/help':
           this.pageIndex = 2
+          this.showSearch = false
+          this.isShow = false
           break
         case '/home/douyu':
           this.pageIndex = 3
+          this.showSearch = true
+          this.isShow = true
           break
         case '/home/huya':
           this.pageIndex = 4
+          this.showSearch = true
+          this.isShow = true
           break
         case '/home/qie':
           this.pageIndex = 5
+          this.showSearch = true
+          this.isShow = true
           break
         case '/home/chushou':
           this.pageIndex = 6
+          this.showSearch = true
+          this.isShow = true
           break
         case '/home/yy':
           this.pageIndex = 7
+          this.showSearch = true
+          this.isShow = true
           break
       }
+    },
+    sendKeyword: function() {
+      bus.$emit('getKeyword', this.value)
     }
 
     // isShowSearch:function(){

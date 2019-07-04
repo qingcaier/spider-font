@@ -70,14 +70,15 @@ var columns = [
   {
     title: '主播名字',
     key: 'anchor_name',
+    width: 150,
     align: 'center'
   },
-  {
-    title: '主播头像',
-    key: 'anchor_portrait',
-    align: 'center'
-    // sortable: true
-  },
+  // {
+  //   title: '主播头像',
+  //   key: 'anchor_portrait',
+  //   align: 'center'
+  //   // sortable: true
+  // },
   {
     title: '主播类型',
     key: 'anchor_category',

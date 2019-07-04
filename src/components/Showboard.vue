@@ -3,13 +3,13 @@
   <div class="showBoard">
     <div class="showHeader">
       <div class="selectArea">
-        <Select v-model="model1" style="width:75%" size="large" placement="top-start">
+        <Select v-model="model1" style="width:100%" size="large" placement="top-start">
           <Option v-for="item in sortWay" :value="item.value" :key="item.value">{{ item.label }}</Option>
         </Select>
-        <Select v-model="model2" style="width:75%" size="large" placement="top-start">
+        <Select v-model="model2" style="width:100%" size="large" placement="top-start">
           <Option v-for="item in anchorClass" :value="item.value" :key="item.value">{{ item.label }}</Option>
         </Select>
-        <Select v-model="model3" style="width:75%" size="large">
+        <Select v-model="model3" style="width:100%" size="large">
           <Option v-for="item in crawlTime" :value="item.value" :key="item.value">{{ item.label }}</Option>
         </Select>
         <div class="refreshButton">
@@ -19,18 +19,6 @@
       <div class="introduction">
         <svg-icon :icon-class="specialLogo"></svg-icon>
         <p style="text-align:left">&emsp;&emsp;{{introduction}}</p>
-      </div>
-
-      <div class="search">
-        <Input
-          type="text"
-          search
-          placeholder="请输入关键词"
-          v-model="value"
-          size="large"
-          style="width:90%"
-          @on-search="keywordSearch"
-        />
       </div>
     </div>
 
@@ -53,6 +41,7 @@
 </template>
 
 <script>
+import bus from '../js/bus'
 import { sortWay, columns } from '../js/config'
 export default {
   props: ['index', 'specialLogo', 'introduction', 'anchorClass'], // 从各平台父组件传来的页面值、logo图标、介绍信息和直播类型
@@ -70,31 +59,31 @@ export default {
       columns: columns, // 展示信息的表格表头
       data: [
         // 展示的信息
-        // {
-        //   ranking: 1,
-        //   anchor_name: '可乐酱Cola',
-        //   anchor_portrait: '',
-        //   anchor_category: '英雄联盟',
-        //   fan_num: 4325789,
-        //   watch_num: 3425789,
-        //   anchor_roomname: '是不是缺个玩伴，低端局，求订阅',
-        //   anchor_url: 'http://www.huya.com/21769863',
-        //   crawl_time: '2018-06-18 15:00'
-        // },
-        // {},
-        // {},
-        // {},
-        // {},
-        // {},
-        // {},
-        // {},
-        // {},
-        // {},
-        // {},
-        // {},
-        // {},
-        // {},
-        // {}
+        {
+          ranking: 1,
+          anchor_name: '可乐酱Cola',
+          anchor_portrait: '',
+          anchor_category: '英雄联盟',
+          fan_num: 4325789,
+          watch_num: 3425789,
+          anchor_roomname: '是不是缺个玩伴，低端局，求订阅',
+          anchor_url: 'http://www.huya.com/21769863',
+          crawl_time: '2018-06-18 15:00'
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
         // {},
         // {},
         // {},
@@ -118,12 +107,13 @@ export default {
   methods: {
     // 关键词搜索
     keywordSearch: function() {
+      // 发起请求数据
       let requestPage = this.index
       let requestValue = this.value
       let requestTime = this.model3
       let requestpage = this.currentPage
       this.$axios
-        .get('/api/keywordSearch', {
+        .get('/', {
           params: {
             websiteId: requestPage, // 发起搜索请求的平台页面
             keyword: requestValue, // 搜素的关键词
@@ -205,10 +195,31 @@ export default {
 
   //初始化页面，得到时间列表，总数据量
   created() {
+    // 监听接收Headernav组件发送来的搜索关键字
+    bus.$on('getKeyword', param => {
+      this.value = param
+      console.log(this.value)
+    })
+
+    // 初始化各个平台的时间列表
     this.init()
+
+    // 初始化展示数据
     this.conditionQuery()
+  },
+  mounted() {
+    // 监听关键词value的变化，有变化即查询
+    this.$watch('value', function() {
+      if (this.value !== '') {
+        this.keywordSearch()
+      }
+    })
+  },
+  beforeDestroy() {
+    // 销毁绑定的事件
+    bus.$off('getKeyword')
   }
 }
 </script>
 
-<style lang="stylus" src="../css/showBoard.styl"></style>
+<style lang="stylus" src="../css/showBoard.styl" scoped></style>

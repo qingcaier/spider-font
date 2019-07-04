@@ -5,6 +5,7 @@ function resolve(dir) {
 }
 
 module.exports = {
+  publicPath: './',
   chainWebpack: config => {
     config.plugin('define').tap(args => {
       const argv = process.argv
@@ -42,12 +43,16 @@ module.exports = {
     devServer: {
       // open: true,
       // https: true,
+      host: '0.0.0.0',
+      port: 8080,
       proxy: {
-        '/user': {
-          target: 'https://devadminschool.icourt.cc'
-        },
-        '/live': {
-          target: 'https://devadminschool.icourt.cc'
+        '/api': {
+          target: 'http://localhost:5000', // target host
+          ws: true, // proxy websockets
+          changeOrigin: true, // needed for virtual hosted sites
+          pathRewrite: {
+            '^/api': '/' // rewrite path
+          }
         }
       }
     }

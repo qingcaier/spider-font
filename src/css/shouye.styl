@@ -15,9 +15,11 @@
 // 图表主板
 .chartBoard {
     width: 80%;
+    height: 50%;
     display: flex;
     background: rgba(256 256 256 0.6) center;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
+    border-radius: 5%;
 }
 
 // 切换图表区域
@@ -36,10 +38,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 60px;
+    width: 60%;
+    height: 5%;
     border: 1px solid #555;
-    margin-top: 30%;
+    margin-top: 40%;
     border-radius: 5px;
     color: rgba(256 256 256 0.6);
     font-size: 1vw;
@@ -54,7 +56,7 @@
 // 鼠标覆盖时按钮
 .changeButton:hover, .selectButton:hover {
     // background-color: rgba(260 260 260 0.9);
-    width: 153px;
+    width: 61%;
     background-color: rgba(108 108 108 0.5);
 }
 
@@ -65,15 +67,17 @@
 
 // 图表区
 .chartArea {
+    width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
+    margin-top: 5%;
     align-items: center;
-    width: 80%;
 }
 
 // 底部数据时间
 .showTime {
     font-size: 1.5vw;
     font-weight: bold;
+    margin-top: 5%;
 }

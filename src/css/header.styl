@@ -1,33 +1,32 @@
 // 公共布局，垂直居中
 .layout {
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
-    // justify-content: center;
 }
 
 // 头部导航栏
 .header {
-    // height: 140px;
     flex-direction: column;
-    // background-size: 100% 100%;
-    // margin-left: auto;
-    // margin-right: auto;
 }
 
-WH = 100%;
+$WH = 100%;
 
 // 第一导航栏
 .navigateBar {
-    width: WH;
+    width: $WH;
     height: 50px;
     background-color: rgba(54, 54, 54, 1);
-    // border: 2px solid red;
+    // justify-content: space-around;
+}
+
+.subNav {
+    width: 40%;
+    // margin-left: 2%;
 }
 
 // 第二导航栏
 .navigateList {
-    width: WH;
+    width: $WH;
     height: 100px;
     background-color: color;
     // margin-top: 20px;
@@ -35,9 +34,15 @@ WH = 100%;
     justify-content: center;
 }
 
+// 搜索栏
+.search {
+    width: 18%;
+    margin-left: 20%;
+}
+
 // 未选中时的导航键公共样式
 .page, .item {
-    height: WH;
+    height: $WH;
     display: flex;
     align-items: center; // 垂直居中
     justify-content: center;
@@ -47,7 +52,7 @@ WH = 100%;
 }
 
 .page {
-    width: 10%;
+    width: 25%;
     color: white;
     font-size: 1.5vw;
     margin-left: 3%;
@@ -61,14 +66,14 @@ WH = 100%;
 
 // 被选中的导航键公共样式
 .selectedPage, .selectedItem {
-    height: WH;
+    height: $WH;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .selectedPage {
-    width: 10%;
+    width: 25%;
     font-size: 1.5vw;
     // font-weight: bold;
     color: rgba(250 250 250 0.5);
@@ -97,7 +102,7 @@ WH = 100%;
 
 // 第一导航栏中主页距离左边距离
 .home {
-    margin-left: 2%;
+    // margin-left: 2%;
 }
 
 // logo图标样式
@@ -109,8 +114,8 @@ WH = 100%;
 
 // svg图样式
 .svg-icon {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;

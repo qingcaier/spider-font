@@ -1,0 +1,144 @@
+.hello {
+    background: #90c0f1;
+    height: 100vh;
+}
+
+.welcomeMain {
+    display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+// 画出幽灵动画
+.ghost {
+    // width: 160px;
+    margin: 100px auto;
+    position: absolute;
+    text-align: center;
+    animation: ghostUpdown 1s infinite alternate;
+    -webkit-animation: ghostUpdown 1s infinite alternate;
+    // 解决Chrome浏览器渲染动画闪烁
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+}
+
+.ghostBody {
+    width: 140px;
+    height: 180px;
+    background: #fff;
+    border-radius: 100% 100% 0 0;
+    position: relative;
+}
+
+.ghostEye {
+    width: 15px;
+    height: 20px;
+    border-radius: 100%;
+    border: 2px solid #061e74;
+    background: #061e74;
+    box-shadow: inset -2px -2px #fff;
+    position: absolute;
+    top: 60px;
+}
+
+.left {
+    left: 45px;
+}
+
+.right {
+    right: 40px;
+}
+
+.ghostMouth {
+    width: 15px;
+    height: 20px;
+    border-radius: 100%;
+    border: 2px solid #061e74;
+    position: absolute;
+    top: 90px;
+    left: 67px;
+}
+
+.ghostWave {
+    position: absolute;
+    width: 140px;
+    height: 20px;
+    background-size: 25px 20px;
+    background-image: radial-gradient(circle at 50% 0%, #fff, 71%, transparent 71%);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+}
+
+.shadow {
+    width: 140px;
+    height: 10px;
+    border-radius: 100%;
+    background: #061e74;
+    opacity: 0.3;
+    margin-top: 70px;
+    animation: shadow 1s infinite alternate;
+    -webkit-animation: shadow 1s infinite alternate;
+}
+
+@keyframes ghostUpdown {
+    from {
+        margin-top: 100px;
+    }
+
+    to {
+        margin-top: 70px;
+    }
+}
+
+@keyframes ghostUpdown {
+    from {
+        margin-top: 100px;
+    }
+
+    to {
+        margin-top: 70px;
+    }
+}
+
+@keyframes shadow {
+    from {
+        margin-top: 70px;
+        opacity: 0.3;
+    }
+
+    to {
+        margin-top: 100px;
+        opacity: 0.1;
+    }
+}
+
+@keyframes shadow {
+    from {
+        margin-top: 70px;
+        opacity: 0.3;
+    }
+
+    to {
+        margin-top: 100px;
+        opacity: 0.1;
+    }
+}
+
+// 设置welcome链接样式
+.welcome {
+    position: absolute;
+    font-weight: normal;
+    top: 425px;
+    // color: transparent;
+    font-size: 40px;
+}
+
+a {
+    // color: #42b983;
+    // -webkit-text-stroke: 1px black;
+    // letter-spacing: 0.04em;
+    letter-spacing: 0;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+}
